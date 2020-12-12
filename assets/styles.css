@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+}
+    
+
+h1, h3{
+    text-align: center;
+    color:chartreuse;
+    font-family: 'Lato', sans-serif;
+}
+
+textarea{
+    display: block;
+    margin-left: 15rem;
+    margin-right: auto;
+    background-color: chartreuse;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 4rem;
+    text-decoration: black;
+}
+
+.encode, .decode{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.encode{
+    background-color: cornflowerblue;
+    color: black;
+}
+
+.decode{
+    background-color: crimson;
+    color: black;
+}
