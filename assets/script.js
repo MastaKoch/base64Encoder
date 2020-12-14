@@ -9,7 +9,7 @@ let output= $(".contentBox");
 // function for encode btn
 $(function() {
     $(".encode").click(function () {
-        output.val(btoa(output.val()));
+        output.val(window.btoa(output.val()));
 
     })
 });
@@ -17,7 +17,7 @@ $(function() {
 // function for decode btn
 $(function() {
     $(".decode").click(function () {
-        output.val(atob(output.val()));
+        output.val(window.atob(output.val()));
 
     })
 });
