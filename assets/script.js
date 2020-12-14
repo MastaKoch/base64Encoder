@@ -4,6 +4,7 @@ let decode= $(".decode");
 let output= $(".contentBox");
 let upper= $(".upper");
 let lower= $(".lower");
+let input= "";
 
 
 
@@ -25,5 +26,19 @@ $(function() {
 });
 
 // function for uppercase btn
+$(function() {
+    $(".upper").click(function () {
+        var s = output.val();
+        output.val(s.toUpperCase());
+
+    })
+});
 
 // function for lowercase btn
+$(function() {
+    $(".lower").click(function () {
+        var l= output.val();
+        output.val(l.toLowerCase());
+
+    })
+});
