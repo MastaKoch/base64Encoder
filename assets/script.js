@@ -2,6 +2,8 @@
 let encode= $(".encode");
 let decode= $(".decode");
 let output= $(".contentBox");
+let upper= $(".upper");
+let lower= $(".lower");
 
 
 
@@ -22,4 +24,6 @@ $(function() {
     })
 });
 
-// test comments
+// function for uppercase btn
+
+// function for lowercase btn

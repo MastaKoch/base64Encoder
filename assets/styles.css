@@ -20,7 +20,7 @@ textarea{
     text-decoration: black;
 }
 
-.encode, .decode{
+.encode, .decode, .upper, .lower {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -35,5 +35,15 @@ textarea{
 
 .decode{
     background-color: crimson;
+    color: black;
+}
+
+.upper{
+    background-color: yellow;
+    color: black;
+}
+
+.lower{
+    background-color: blueviolet;
     color: black;
 }
