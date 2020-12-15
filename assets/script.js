@@ -8,6 +8,7 @@ let upperLowerOutput= $(".upperLowerBox");
 let add= $(".add");
 let sub=$(".sub");
 let addSubOutput= $(".numberBox");
+let frequencyOutput= $(".freqBox");
 
 
 
@@ -62,4 +63,28 @@ $(function() {
         let d = parseInt(c)- 1;
         addSubOutput.val(d);
     })
+});
+
+// function for count freq btn
+$(function() {
+    $(".countFreq").click(function () {
+        var s = frequencyOutput.val();
+        var c = s.split("");
+        var itemCount= {};
+
+        for(var i=0; i< c.length; i++)
+        {
+            if (itemCount[c[i]] == undefined)
+                    itemCount[c[i]] = 0;
+                itemCount[c[i]]++;
+        }
+        var finalDisplay = '';
+        for (var i in itemCount)
+        {
+            console.log(i + "=" + itemCount[i]);
+            finalDisplay += i + "=" + itemCount[i];
+        }
+        frequencyOutput.val(finalDisplay);        
+    })
+    
 });

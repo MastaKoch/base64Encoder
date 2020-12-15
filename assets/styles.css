@@ -24,14 +24,14 @@ textarea{
     font-size: 24pt;
 }
 
-.encodeDecodeBtns, .upperLowerBtns, .addSubBtns {
+.encodeDecodeBtns, .upperLowerBtns, .addSubBtns, .countFreqBtn {
     display: flex;
     flex-direction: column;
   
 
 }
 
-.encode, .decode, .upper, .lower, .add, .sub {
+.encode, .decode, .upper, .lower, .add, .sub, .countFreq {
     display: flex;
     flex-direction: column;
     align-items: center;
