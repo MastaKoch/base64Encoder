@@ -1,10 +1,13 @@
 // variables defined here vv
 let encode= $(".encode");
 let decode= $(".decode");
-let output= $(".contentBox");
+let encodeDecodeOutput= $(".encodeDecodeBox");
 let upper= $(".upper");
 let lower= $(".lower");
-let input= "";
+let upperLowerOutput= $(".upperLowerBox");
+let add= $(".add");
+let sub=$(".sub");
+let addSubOutput= $(".numberBox");
 
 
 
@@ -12,7 +15,7 @@ let input= "";
 // function for encode btn
 $(function() {
     $(".encode").click(function () {
-        output.val(window.btoa(output.val()));
+        encodeDecodeOutput.val(window.btoa(encodeDecodeOutput.val()));
 
     })
 });
@@ -20,7 +23,7 @@ $(function() {
 // function for decode btn
 $(function() {
     $(".decode").click(function () {
-        output.val(window.atob(output.val()));
+        encodeDecodeOutput.val(window.atob(encodeDecodeOutput.val()));
 
     })
 });
@@ -28,8 +31,8 @@ $(function() {
 // function for uppercase btn
 $(function() {
     $(".upper").click(function () {
-        var s = output.val();
-        output.val(s.toUpperCase());
+        var s =upperLowerOutput.val();
+        upperLowerOutput.val(s.toUpperCase());
 
     })
 });
@@ -37,8 +40,26 @@ $(function() {
 // function for lowercase btn
 $(function() {
     $(".lower").click(function () {
-        var l= output.val();
-        output.val(l.toLowerCase());
+        var l= upperLowerOutput.val();
+        upperLowerOutput.val(l.toLowerCase());
 
+    })
+});
+
+// function for increment btn
+$(function() {
+    $(".add").click(function () {
+        let a = addSubOutput.val();
+        let b = parseInt(a)+ 1;
+        addSubOutput.val(b);
+    })
+});
+
+// function for decrement btn
+$(function() {
+    $(".sub").click(function () {
+        let c = addSubOutput.val();
+        let d = parseInt(c)- 1;
+        addSubOutput.val(d);
     })
 });
