@@ -13,6 +13,8 @@ let frequencyOutput= $(".freqBox");
 
 
 
+
+
 // function for encode btn
 $(function() {
     $(".encode").click(function () {
@@ -50,10 +52,15 @@ $(function() {
 // function for increment btn
 $(function() {
     $(".add").click(function () {
-        let a = addSubOutput.val();
-        let b = parseInt(a)+ 1;
+        var a = addSubOutput.val();
+        var b = parseInt(a)+ 1;
+            if(isNaN(a)){
+                alert("Please enter a number")
+            }
         addSubOutput.val(b);
     })
+
+    
 });
 
 // function for decrement btn
@@ -61,6 +68,9 @@ $(function() {
     $(".sub").click(function () {
         let c = addSubOutput.val();
         let d = parseInt(c)- 1;
+            if(isNaN(c)){
+                alert("Please enter a number")
+            }
         addSubOutput.val(d);
     })
 });
@@ -71,14 +81,13 @@ $(function() {
         var s = frequencyOutput.val();
         var c = s.split("");
         var itemCount= {};
-        var options= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        
 
         for(var i=0; i< c.length; i++)
         {
             if (itemCount[c[i]] == undefined)
                     itemCount[c[i]] = 0;
                 itemCount[c[i]]++;
-
                  
         }
         var finalDisplay = '';
