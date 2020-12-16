@@ -9,10 +9,24 @@
         </head>
 
         <body>
-            <h1>Welcome to the Converter Page! </h1>
-
-            <h3>Base 64 Converter</h3>
+            <nav id>
+                <h1 id="top">Welcome to the Converter Page! </h1>
+                <!-- links to different parts of page -->
+                <ul>
+                    <li><a id="navItem" href="#b64">Base 64 Converter</a></li>
+                    <li><a id="navItem" href="#letter">Upper/Lowercase Converter</a></li>
+                    <li><a id="navItem" href="#numbCount">Number Counter</a></li>
+                    <li><a id="navItem" href="#freqCount">Frequency Counter</a></li>
+                </ul>
+            </nav>
             <div class="container-1">
+            
+                <a id="#b64"><h3 id="b64">Base 64 Converter</h3></a>
+
+                <h3 class=b64Intro>What is Base 64?</h3>
+                <!-- youtube vid -->
+                    <iframe class=youtubeVid width="560" height="315" src="https://www.youtube.com/embed/8qkxeZmKmOY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
                 <textarea class="encodeDecodeBox" placeholder="Enter Message to encode / decode!"></textarea>
                      <!--encode and decode btns  -->
                         <div class="encodeDecodeBtns">
@@ -20,8 +34,11 @@
                             <button class="decode">Decode</button>
                         </div>
             </div>
-            <h3>Upper / Lowercase Converter</h3>
+       
+            
             <div class="container-2">
+                <a id="#letter"><h3 id="letter">Upper / Lowercase Converter</h3></a>
+
                 <textarea class="upperLowerBox" placeholder="Enter Message Here!"></textarea> 
                     <!-- upper and lower case btns -->
                         <div class="upperLowerBtns">
@@ -30,8 +47,10 @@
                         </div>
             </div>
 
-            <h3>Number Counter</h3>
+            
             <div class="container-3">
+                <a id="#numbCount"><h3 id="numbCount">Number Counter</h3></a>
+
                 <textarea class="numberBox" placeholder="Enter Numbers Here!"></textarea>
                     <!-- add and subtract btns -->
                         <div class="addSubBtns">
@@ -41,14 +60,16 @@
                     
             </div>
             
-            <h3>Frequency Counter</h3>
+            
             <div class="container-4">
+                <a id="#freqCount"><h3 id="freqCount">Frequency Counter</h3></a>
                 <textarea class="freqBox" placeholder="Enter Message Here!"></textarea>
                     <!-- count frequency btn -->
                         <div class="countFreqBtn">
                             <button class="countFreq">Count Frequency</button>
                         </div>
-                    
+                        <!-- back to top button -->
+                        <a href="#top" class="backBtn"><button id="backToTop">Back to Top</button></a>
             </div>
 
             

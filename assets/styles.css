@@ -1,47 +1,92 @@
 body{
-    background-color: antiquewhite;
+    background-color: white;
 }
     
 
-h1, h3{
+h1{
+    text-align: center;
+    color:white;
+    font-family: 'Lato', sans-serif;
+} 
+
+h3{
     text-align: center;
     color:blue;
     font-family: 'Lato', sans-serif;
 }
 
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: stretch;
+    margin-top: 3rem;
+    color: white;
+    margin-bottom: 3rem;
+
+}
+
+
+#navItem{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-bottom: 3rem;
+    border: white;
+    border-style: solid;
+}
+
+#navItem:hover{
+    background-color: powderblue;
+    color: black;
+    text-decoration: none;
+}
+
+nav{
+    font-family: 'Lato', sans-serif;
+    background-color: blue;
+    color: white;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.container-1, .container-2, .container-3, .container-4{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.b64Intro{
+    color: red;
+    font-style: italic;
+}
+
+.youtubeVid{
+    margin-bottom: 20px;
+}
 textarea{
     display: block;
-    margin-left: 20rem;
+    margin-left: auto;
     margin-right: auto;
     background-color: powderblue;
     color: black;
     font-family: 'Lato', sans-serif;
-    margin-bottom: 4rem;
-    width: 50rem;
-    max-width: 60rem;
+    width: 30rem;
+    max-width: 33rem;
     height: 15rem;
     max-height: 15rem;
     font-size: 24pt;
 }
 
-.encodeDecodeBtns, .upperLowerBtns, .addSubBtns, .countFreqBtn {
-    display: flex;
-    flex-direction: column;
-  
 
-}
-
-
-.encode, .decode, .upper, .lower, .add, .sub, .countFreq {
-    display: flex;
+.encode, .decode, .upper, .lower, .add, .sub, .countFreq, #backToTop {
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    margin: 5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    align-content: space-between;
+    margin: 10px;
     padding: 1rem;
-    margin-bottom: 1rem;
     background-color: blue;
     color: antiquewhite;
     border-radius: 8px;
@@ -53,8 +98,17 @@ textarea{
         
 }
 
-.encode:hover, .decode:hover, .upper:hover, .lower:hover, .add:hover, .sub:hover, .countFreq:hover{
+.encode:hover, .decode:hover, .upper:hover, .lower:hover, .add:hover, .sub:hover, .countFreq:hover, #backToTop:hover{
     background-color: paleturquoise;
     color: black;
 
+}
+
+
+.backBtn, .backToTop{
+    display: inline-block;
+    text-decoration: none;
+    align-content: center;
+    align-items: center;
+    text-align: center;
 }
